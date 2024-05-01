@@ -9,7 +9,6 @@ fun main(){
 
     firstFlyHour = "10"
     firstFlyMinute = "55"
-
     println("$firstFlyHour:$firstFlyMinute")
 
     //В принципе, можно и так, судя по подсказке:
