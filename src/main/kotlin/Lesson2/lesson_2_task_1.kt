@@ -1,7 +1,6 @@
 package org.example.Lesson2
 
 fun main(){
-
     //Инициализируем переменные
     val mike = 3
     val nik = 4
