@@ -1,7 +1,7 @@
 package org.example.Lesson2
 
-fun main(){
-    val baff =20
+fun main() {
+    val baff = 20
     val cristalOre = 7
     val ironOre = 11
 
