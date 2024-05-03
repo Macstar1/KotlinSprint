@@ -6,11 +6,11 @@ fun main() {
     val employeeSalary = 30_000
     val traineeSalary = 20_000
 
-    val totalEmployeeSalary = employees * employeeSalary //Зарплата сотрудников
-    val totalTraineeSalary = traineeSalary * trainees //Зарплата стажеров
-    val totalSalary = totalTraineeSalary + totalEmployeeSalary //Общая зарплата работников
+    val totalEmployeeSalary = employees * employeeSalary
+    val totalTraineeSalary = traineeSalary * trainees
+    val totalSalary = totalTraineeSalary + totalEmployeeSalary
     val averageSalary =
-        (totalEmployeeSalary + totalTraineeSalary) / (employees + trainees) //Средняя зарплата работников
+        (totalEmployeeSalary + totalTraineeSalary) / (employees + trainees)
 
     println("Расходы на выплату зарплаты постоянных сотрудников: $totalEmployeeSalary")
     println("Общие расходы по ЗП: $totalSalary")
