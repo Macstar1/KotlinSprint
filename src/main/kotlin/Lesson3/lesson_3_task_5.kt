@@ -8,9 +8,11 @@ fun main() {
     val number = split[2]
 
     println(move)
-    println("""
+    println(
+        """
         С клетки $from
         На клетку $to
         Ход номер $number
-    """.trimIndent())
+    """.trimIndent()
+    )
 }
