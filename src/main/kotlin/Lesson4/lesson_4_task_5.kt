@@ -12,7 +12,7 @@ fun main() {
     val shipIsReady =
         (!shipDamage && (MIN_CRUE_VALUE <= shipCrew!!) && (shipCrew <= MAX_CRUE_VALUE) && (food!! > FOOD) && weather) || (shipDamage && (shipCrew == MAX_CRUE_VALUE) && weather && (food!! >= FOOD))
 
-    println("Гтовность корабля: $shipIsReady")
+    println("Готовность корабля: $shipIsReady")
 
 }
 
