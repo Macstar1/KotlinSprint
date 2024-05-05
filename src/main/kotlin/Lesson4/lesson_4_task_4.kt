@@ -2,14 +2,14 @@ package org.example.Lesson4
 
 fun main() {
     val dayOfTraining = 5
-    var parity = dayOfTraining % 2
+    var isParity = (dayOfTraining % 2) == 0
 
     println(
         """
-         Упражнения для рук:    ${parity == 1} 
-         Упражнения для ног:    ${parity == 0} 
-         Упражнения для спины:  ${parity == 0} 
-         Упражнения для пресса: ${parity == 1}
+         Упражнения для рук:    ${!isParity}
+         Упражнения для ног:    ${isParity} 
+         Упражнения для спины:  ${isParity} 
+         Упражнения для пресса: ${!isParity}
     """.trimIndent()
     )
 
