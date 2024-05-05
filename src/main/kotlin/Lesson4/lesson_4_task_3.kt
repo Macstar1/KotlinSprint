@@ -1,12 +1,15 @@
 package org.example.Lesson4
 
 fun main() {
-    val weatherIsSunsine = true
-    val tentIsOpen = true
+    val isSunny = true
+    val isAwningOpen = true
     val airHumidity = 20
     val season = "зима"
-    val goodConditions = weatherIsSunsine && tentIsOpen && (airHumidity == 20) && (season != "зима")
+    val goodConditions = isSunny && isAwningOpen && (airHumidity == GOOD_HUMIDITY) && (season != BAD_SEASON)
 
     println(goodConditions)
 
 }
+
+const val GOOD_HUMIDITY = 20
+const val BAD_SEASON = "зима"
