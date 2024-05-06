@@ -3,7 +3,7 @@ package org.example.Lesson5
 import kotlin.random.Random
 
 fun main() {
-    val randomValues = listOf(Random.nextInt(0, 42), Random.nextInt(0, 42),Random.nextInt(0, 42))
+    val randomValues = listOf(Random.nextInt(0, 42), Random.nextInt(0, 42), Random.nextInt(0, 42))
     // Для проверки работоспособности программы
     // println(randomValues)
     val userValues = mutableListOf(readln().toInt(), readln().toInt(), readln().toInt())
