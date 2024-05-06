@@ -1,14 +1,18 @@
 package org.example.Lesson5
 
-import kotlin.random.Random
-
 fun main() {
-    val randomValues = listOf(Random.nextInt(0, 42), Random.nextInt(0, 42), Random.nextInt(0, 42))
+
+    var randomValues = mutableListOf((1..42).random(), (1..42).random(), (1..42).random())
+    while (randomValues.distinct().size < 3) {
+        randomValues = mutableListOf((1..42).random(), (1..42).random(), (1..42).random())
+    }
 
     // Для проверки работоспособности программы
     // println(randomValues)
 
-    val userValues = mutableListOf(readln().toInt(), readln().toInt(), readln().toInt())
+    println("Введите три числа от 1 до 42: ")
+
+    val userValues = listOf(readln().toInt(), readln().toInt(), readln().toInt())
     val intersectList = userValues.intersect(randomValues.toList())
     val numberOfIntersection = intersectList.size
 
