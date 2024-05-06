@@ -9,5 +9,4 @@ fun main() {
     else "Доступ запрещен."
 
     println(result)
-
 }
