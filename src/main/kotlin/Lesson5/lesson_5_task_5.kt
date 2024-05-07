@@ -4,12 +4,14 @@ fun main() {
 
     var randomValues = mutableListOf(
         (1..THE_ULTIMATE_QUESTION).random(),
-        (1..THE_ULTIMATE_QUESTION).random(), (1..THE_ULTIMATE_QUESTION).random()
+        (1..THE_ULTIMATE_QUESTION).random(),
+        (1..THE_ULTIMATE_QUESTION).random()
     )
     while (randomValues.distinct().size < 3) {
         randomValues = mutableListOf(
             (1..THE_ULTIMATE_QUESTION).random(),
-            (1..THE_ULTIMATE_QUESTION).random(), (1..THE_ULTIMATE_QUESTION).random()
+            (1..THE_ULTIMATE_QUESTION).random(),
+            (1..THE_ULTIMATE_QUESTION).random()
         )
     }
 
