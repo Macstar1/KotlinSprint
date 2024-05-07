@@ -19,7 +19,7 @@ fun main() {
     // Для проверки работоспособности программы
     // println(randomValues)
 
-    println("Введите три числа от 1 до 42: ")
+    println("Введите три числа от 1 до $THE_ULTIMATE_QUESTION: ")
 
     val userValues = listOf(readln().toInt(), readln().toInt(), readln().toInt())
     val intersectList = userValues.intersect(randomValues.toList())
