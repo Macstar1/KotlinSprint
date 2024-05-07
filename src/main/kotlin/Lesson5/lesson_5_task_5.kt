@@ -2,9 +2,11 @@ package org.example.Lesson5
 
 fun main() {
 
-    var randomValues = mutableListOf((1..42).random(), (1..42).random(), (1..42).random())
+    var randomValues = mutableListOf((1..THE_ULTIMATE_QUESTION).random(),
+        (1..THE_ULTIMATE_QUESTION).random(), (1..THE_ULTIMATE_QUESTION).random())
     while (randomValues.distinct().size < 3) {
-        randomValues = mutableListOf((1..42).random(), (1..42).random(), (1..42).random())
+        randomValues = mutableListOf((1..THE_ULTIMATE_QUESTION).random(),
+            (1..THE_ULTIMATE_QUESTION).random(), (1..THE_ULTIMATE_QUESTION).random())
     }
 
     // Для проверки работоспособности программы
@@ -25,3 +27,4 @@ fun main() {
     }
     println(result)
 }
+const val THE_ULTIMATE_QUESTION = 42
